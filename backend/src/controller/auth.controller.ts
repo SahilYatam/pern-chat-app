@@ -90,7 +90,7 @@ const login = async (req: Request, res: Response) => {
       profilePic: user.profilePic,
     });
   } catch (error: any) {
-    console.log("Error in signup controller", error.message);
+    console.log("Error in Login controller", error.message);
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
@@ -118,7 +118,7 @@ const getMe = async (req: Request, res: Response) => {
       profilePic: user.profilePic,
     });
   } catch (error: any) {
-    console.log("Error in signup controller", error.message);
+    console.log("Error in getMe controller", error.message);
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
